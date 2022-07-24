@@ -1,4 +1,4 @@
-from tcat.preprocess.clean import Clean
+from pymink.preprocess.clean import Clean
 
 cleaner = Clean()
 
