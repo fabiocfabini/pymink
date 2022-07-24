@@ -1,0 +1,8 @@
+# Local Enviroment
+*env*
+
+# Python
+*.ipynb
+
+# Workflow
+workflow.md
