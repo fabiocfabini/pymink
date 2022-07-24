@@ -3,6 +3,7 @@
 
 # Python
 *.ipynb
+*__pycache__*
 
 # Workflow
 workflow.md
