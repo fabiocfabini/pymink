@@ -1,9 +1,13 @@
 # Local Enviroment
 *env*
 
-# Python
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
 *.ipynb
-*__pycache__*
+*.pyc
 
 # Workflow
 workflow.md
