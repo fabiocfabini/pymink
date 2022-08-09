@@ -1,6 +1,8 @@
-import re
+from pymink._exceptions import PyMinkException
 
-class Clean:
+from typing import Optional
+
+class Cleaner:
     """
     This class is used to clean the input text.
     Diferent cleaning processes could be implemented.
@@ -24,8 +26,17 @@ class Clean:
                 4- "it?" -> "IT"
     """
 
-    def __init__(self) -> None:
-        pass
+    def __init__(self, process: str = "Process 1") -> None:
+        self.process = process
 
-    def clean(self, text: str) -> str:
-        pass
+    def clean(self, text: str, process: Optional[str] = None) -> str:
+        """
+        This method cleans the input text.
+        """
+        if not process:
+            process = self.process
+
+        if process == "Process 1":
+            return ''.join([char for char in text if char.isalpha() or char == " "]).upper()
+        else:
+            raise PyMinkException(f"The process '{process}' is not implemented.")

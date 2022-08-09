@@ -1,5 +1,7 @@
-from pymink.preprocess.clean import Clean
+from pymink.preprocess.cleaner import Cleaner
 
-cleaner = Clean()
+cleaner = Cleaner(process="Process 1")
 
-print(cleaner.__doc__)
+text = cleaner.clean("1- Abcdefg")
+
+print(text)
