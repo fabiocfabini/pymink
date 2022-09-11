@@ -1,7 +1,9 @@
-from pymink.preprocess.cleaner import Cleaner
+from pymink import Cleaner
+from pymink import DTXT_2
+from pymink import word_ngrams, sentence_ngrams
 
-cleaner = Cleaner(process="Process 1")
+cln = Cleaner()
+filtered_text = cln.clean(DTXT_2)
 
-text = cleaner.clean("1- Abcdefg")
-
-print(text)
+df_word = word_ngrams(filtered_text, 2)
+df_sentence = sentence_ngrams(filtered_text, 4)

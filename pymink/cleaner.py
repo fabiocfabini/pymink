@@ -1,3 +1,9 @@
+"""
+In this module will be defined all the ways to clean the input data.
+
+The cleaning process is done by the Cleaner class.
+"""
+
 from pymink._exceptions import PyMinkException
 
 from typing import Optional
