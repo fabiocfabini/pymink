@@ -30,6 +30,9 @@ share/python-wheels/
 *.egg
 MANIFEST
 
+# personal
+main.py
+
 # Jupyter Notebook
 .ipynb_checkpoints
 *.ipynb
