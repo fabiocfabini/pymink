@@ -1,4 +1,4 @@
-# from pymink.cleaner import Cleaner
+from pymink.cleaner import Cleaner
 from pymink.ngram import word_ngrams, sentence_ngrams
 
 # Dummy text
